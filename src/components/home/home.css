@@ -1,0 +1,117 @@
+.container-home {
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.container-subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Amatic SC";
+  padding-right: 100px;
+  padding-left: 100px;
+  animation-duration: 3s;
+  animation-name: slideinDesc;
+}
+
+.subtitle {
+  font-size: 40px;
+  width: 300px;
+  margin-top: 0;
+}
+
+.description {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.container-ubication {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-img {
+  width: 600px;
+  height: 400px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.flag {
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes slidein {
+  from {
+    padding-left: 100%;
+  }
+
+  to {
+    padding-left: 0%;
+  }
+}
+
+@keyframes slideinDesc {
+  from {
+    padding-top: 100%;
+  }
+
+  to {
+    padding-top: 0%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    padding-left: 100%;
+  }
+
+  to {
+    padding-left: 0%;
+  }
+}
+
+@keyframes mobileAnimation {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-home {
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    overflow: hidden;
+  }
+  .container-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Amatic SC";
+    padding-right: 0;
+    padding-left: 0;
+    animation-duration: 3s;
+    animation-name: mobileAnimation;
+  }
+
+  .food-img {
+    width: 300px;
+    height: 150px;
+    animation-duration: 3s;
+    animation-name: mobileAnimation;
+  }
+}
