@@ -80,11 +80,11 @@
 
 @keyframes mobileAnimation {
   from {
-    opacity: 0%;
+    padding-top: 100%;
   }
 
   to {
-    opacity: 100%;
+    padding-top: 0%;
   }
 }
 
@@ -111,7 +111,5 @@
   .food-img {
     width: 300px;
     height: 150px;
-    animation-duration: 3s;
-    animation-name: mobileAnimation;
   }
 }
